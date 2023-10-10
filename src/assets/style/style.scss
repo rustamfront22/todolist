@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    background: none;
+    list-style: none;
+    font-family: system-ui;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+button{
+    cursor: pointer;
+}
+.addNote{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(103, 80, 164, 0.11) 0%, rgba(103, 80, 164, 0.11) 100%), #FFFBFE;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+}
+@import url(@/components/navbar/Navbar.scss),
+        url(@/components/notes/Notes.scss),
+        url(@/components/modal/Modal.scss),
+        url(@/components/dropdown/Dropdown.scss);
